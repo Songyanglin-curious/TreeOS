@@ -11,15 +11,24 @@ importers:
       dotenv:
         specifier: ^17.3.1
         version: 17.3.1
+      g:
+        specifier: ^2.0.1
+        version: 2.0.1
       openai:
         specifier: ^6.24.0
         version: 6.24.0
+      pnpm:
+        specifier: ^10.30.2
+        version: 10.30.2
 
 packages:
 
   dotenv@17.3.1:
     resolution: {integrity: sha512-IO8C/dzEb6O3F9/twg6ZLXz164a2fhTnEWb95H23Dm4OuN+92NmEAlTrupP9VW6Jm3sO26tQlqyvyi4CsnY9GA==}
     engines: {node: '>=12'}
+
+  g@2.0.1:
+    resolution: {integrity: sha512-Fi6Ng5fZ/ANLQ15H11hCe+09sgUoNvDEBevVgx3KoYOhsH5iLNPn54hx0jPZ+3oSWr+xajnp2Qau9VmPsc7hTA==}
 
   openai@6.24.0:
     resolution: {integrity: sha512-WLR+qki3S4c9ZHilR42GDTxEpTrMFeWfcFNg1RMELW0ZCCBJMDDlqVV+QQEM5KN2hjUyZu45QpgJmln/0ykFRg==}
@@ -33,8 +42,17 @@ packages:
       zod:
         optional: true
 
+  pnpm@10.30.2:
+    resolution: {integrity: sha512-Ns3HB+e3lAqYjJwez4jQhPhRS1w/CF9TouJEwpIdOyVFvCDdTr4fwkX+7EY7spiuzqemPtH3aAuHfcY3nY0MtA==}
+    engines: {node: '>=18.12'}
+    hasBin: true
+
 snapshots:
 
   dotenv@17.3.1: {}
 
+  g@2.0.1: {}
+
   openai@6.24.0: {}
+
+  pnpm@10.30.2: {}
