@@ -1,10 +1,13 @@
-import deepseek from "./requests/deepseekService.js";
+import deepseek from "./requests/deepseekService.ts";
+
+/** @typedef {import("./types/tree").AnalyzeResult} AnalyzeResult */
 
 async function main() {
   const userText = `做一个简单的任务管理系统。
 用户可以注册登录，创建任务，设置截止时间，标记完成。
 需要支持任务分类和搜索功能。`;
 
+  /** @type {AnalyzeResult} */
   const { draft, json, retried, firstError } = await deepseek.analyzeToTree(userText);
 
   console.log("=== draft ===");
