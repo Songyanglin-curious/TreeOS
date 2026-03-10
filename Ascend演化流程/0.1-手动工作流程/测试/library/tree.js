@@ -1,21 +1,11 @@
 const ascendState = {
-    rootQuestion: "梳理三层任务下发 / 多天回送 / 归档统计这个复杂需求的真实业务结构",
-    currentPath: ["系统事实主对象是什么"],
-    nextPath: ["系统事实主对象是什么", "每日执行回送记录最少需要绑定哪些核心维度"],
+    rootQuestion: "",
+    currentPath: [],
+    nextPath: [],
     tree: {
-        title: "系统事实主对象是什么",
-        frozen: "当前主线确定为：把“每日执行回送记录”作为系统事实主对象，再由它向上汇总出 B 视图和 A 视图。",
-        parkingLot: [
-            "保留备选：以下发链路关系作为主对象，每日记录挂在其下",
-            "当前不跟：权限细化、页面展示、统计口径细节、异常流程"
-        ],
-        children: [
-            {
-                title: "每日执行回送记录最少需要绑定哪些核心维度",
-                frozen: "",
-                parkingLot: [],
-                children: []
-            }
-        ]
+        title: "",
+        frozen: "",
+        parkingLot: [],
+        children: []
     }
 };
